@@ -94,3 +94,8 @@ jobs:
         run: |
           cd proftpd
           sudo make install
+
+      - name: Check HTML docs
+        run: |
+          echo "Processing mod_auth_policy.html"
+          tidy -errors -omit -q mod_auth_policy.html

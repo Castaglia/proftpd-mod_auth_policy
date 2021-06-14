@@ -99,4 +99,4 @@ jobs:
         run: |
           cd proftpd-mod_auth_policy
           echo "Processing mod_auth_policy.html"
-          tidy -errors -omit -q mod_auth_policy.html
+          tidy -errors -omit -q mod_auth_policy.html | exit 0
